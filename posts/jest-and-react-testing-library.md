@@ -145,9 +145,9 @@ O método `expect` é o que nos permite testar o valor de determinado objeto, ou
 
 Continuando com a cobertura do nosso código, o segundo teste que faremos é para assegurar de que dois botões são renderizados na tela, que afinal é um dos requisitos dessa aplicação. Usamos o método [screen](https://testing-library.com/docs/dom-testing-library/api-queries#screen) da RTL para obter os botões, de acordo com o seu atributo acessível `name`. 
 
-E ai você pergunta: **Não vimos que era ruim testar baseado na implementação?** Ai que tá! Quando falamos de implementação, nos referimos a event listeners, métodos internos, estados e efeitos colaterais, pois de fato para obter um elemento precisamos de alguma informação da marcação HTML. O ponto aqui é: quanto melhor estruturarmos nosso código, menos o teste estará acoplado a ele.
+E aí você pergunta: **Não vimos que era ruim testar baseado na implementação?** Aí que tá! Quando falamos de implementação, nos referimos a event listeners, métodos internos, estados e efeitos colaterais, pois de fato para obter um elemento precisamos de alguma informação da marcação HTML. O ponto aqui é: quanto melhor estruturarmos nosso código, menos o teste estará acoplado a ele.
 
-Geralmente quando definimos as interfaces, seja com o UX ou não, sabemos a label e textos dos elementos, e isso é uma coisa que dificilmente muda durante ciclo de vida da aplicação, e mesmo se acontecer, não será um grande problema, apenas precisaremos atualizar a string no teste desse componente.
+Geralmente quando definimos as interfaces, seja com o UX ou não, sabemos a label e textos dos elementos, e isso é uma coisa que dificilmente muda durante ciclo de vida da aplicação, inclusive é muito relevante que um teste quebre nesse cenário pois nem sempre essa mudança é devida e necessária. E ainda assim caso venha a acontecer, não será um grande problema, apenas precisaremos atualizar a string no teste desse componente.
 
 #### O último teste...
 
