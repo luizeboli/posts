@@ -1,2 +1,3 @@
-# posts
-This repository groups all posts written by Luiz Felicio
+# Luiz Felicio
+
+This repository groups all posts written by me.
