@@ -153,7 +153,7 @@ Geralmente quando definimos as interfaces, seja com o UX ou não, sabemos a labe
 
 ![Imgur](https://imgur.com/Vu5ypVe.png)
 
-Aqui uma figura nova, o [userEvent](https://github.com/testing-library/user-event): uma biblioteca mantida também pela RTL, que simula as ações da mesma forma que um usuário real. Nesse caso usaremos para simular um clique nos botões.
+Aqui uma figura nova, o [userEvent](https://github.com/testing-library/user-event): uma biblioteca mantida também pela RTL, que simula as ações da mesma forma que um usuário real. Nesse caso usaremos para simular um clique nos botões com o método `click`. Perceba que usamos um matcher novo do Jest, o `toBe`, que valida se determinado elemento possui o valor esperado.
 
 Se você ainda tinha alguma dúvida sobre testar a implementação, espero que a partir daqui estejam todas sanadas 😅
 
